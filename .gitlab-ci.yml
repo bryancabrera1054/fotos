@@ -1,0 +1,15 @@
+image: php:7.4-fpm-alpine
+
+before_script:
+  - apk update && apk add git unzip
+
+pages:
+  script:
+    - mkdir .public
+    - cp -r * .public
+    - mv .public public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
