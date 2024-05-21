@@ -7,7 +7,7 @@ session_start();
 $client = new Google_Client();
 $client->setClientId('237603080191-oebfa4ipbd35t2o3ten942nespugkbjt.apps.googleusercontent.com');
 $client->setClientSecret('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');
-$client->setRedirectUri('http://localhost:85/fotos/callback.php');
+$client->setRedirectUri('https://bryancabrera1054.github.io/fotos/callback.php');
 $client->addScope(Google_Service_Drive::DRIVE_FILE);
 
 // Redirigir a Google OAuth 2.0
